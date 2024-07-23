@@ -1,0 +1,19 @@
+body{
+    background-color: whitesmoke;
+}
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    background-color: #212529;
+    color: white;
+    height: 100%;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+}

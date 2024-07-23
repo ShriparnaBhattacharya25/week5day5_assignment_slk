@@ -1,0 +1,78 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #EEEDEB;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #F5F7F8;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #212529;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #212529;
+    color: #fff;
+    border-color: #fff;
+}
+
+.highlight {
+    background-color: #EB4747;
+}
+
+.LAB{
+    background-color: #FFB562;
+}
+.Games{
+    background-color: #36AE7C;
+}
+.LIBRARY{
+    background-color: #378CE7;
+}
+.leave{
+    background-color: #FDDE55;
+}
+.LUNCH{
+    background-color: #E68369;
+}
+
+
+@media (max-width: 991px){
+    body {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #EEEDEB;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width:768px){
+    table {
+        margin: 530px 1px 530px 1px;
+        background-color: #fff;
+        border: 2px solid #F5F7F8;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #212529;
+        font-size: 4rem;
+    }
+}

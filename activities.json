@@ -1,0 +1,17 @@
+{
+    "Activities": [
+        {
+            "id": 1,
+            "activity": "Create Project File",
+            "subject": "Maths"
+        }
+    ],
+    "Extra_Activity": [
+        {
+            "id": 1,
+            "date": "2024-07-18",
+            "activity": "Learned Chapter 12",
+            "Subject": "Science"
+        }
+    ]
+}

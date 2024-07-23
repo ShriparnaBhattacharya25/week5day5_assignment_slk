@@ -1,0 +1,217 @@
+:root{
+    --main-color: #BBE9FF;
+    --black: #13131a;
+    --bg: #212529;
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth; 
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background: var(--bg);
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    padding-top: 4rem;
+    font-size: 4rem;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.button{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: #000000;
+    background: var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    letter-spacing: 0.2rem;
+}
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 4rem;
+}
+.header .nav-bar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+}
+.header .nav-bar a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.header .icon-school ion-icon{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icon-school ion-icon:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header .search-form.active{
+    transform: scaleY(1);
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+.section{
+    padding: 2rem 7%;
+}
+.welcome{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("school1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.welcome .welcome-page{
+    max-width: 60rem;
+    margin-left: 20px;
+}
+.welcome .welcome-page h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.extra-activities {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .nav-bar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .nav-bar.active{
+        right: 0;
+    }
+    .header .nav-bar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    .welcome{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .welcome .welcome-page h3{
+        font-size: 5em;
+    }
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+
+    }
+}
